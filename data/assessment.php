@@ -68,17 +68,18 @@ return [
 					'CLS 63 AMG',
 					'E 50 AMG',
 					'E 55 AMG',
-					'E 63 AMG'
+					'E 63 AMG',
+                    'F1 WO6 (Hybrid)'
 				]
 			],
 			'Opel'=>[
 				'models'=>[
 					'Karl',
 					'Adam',
-					'Corsa',
+					'Corsa (2009)',
 					'Meriva',
 					'Astra',
-					'Mokka',
+					'Mokka (2014)',
 					'Combo Tour',
 					'Zafira Tourer',
 					'Insignia',

@@ -32,6 +32,6 @@ class Main
      */
 	public function myFunction()
 	{
-		//... your implementation
+		//... remove this function
 	}
 }

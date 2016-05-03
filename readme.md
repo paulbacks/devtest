@@ -1,4 +1,4 @@
-![REYEZ!](http://www.reyez.nl/wp-content/uploads/2013/04/logo_reyez.jpg)
+![REYEZ!](http://www.reyez.nl/mailings/reyez-logo-mail.png)
 
 # DevTest
 

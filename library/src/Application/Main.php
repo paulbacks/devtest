@@ -60,7 +60,7 @@ class Main
         foreach ($this->data['cars']['brands'] as $brands){
             foreach ($brands['models'] as $modal){
                 //if the modal has the filterValue in the string add it to the array.
-                if(strstr($modal, $filterValue)){
+                if(strstr($modal, strval($filterValue))){
                     array_push($allCarModalsWithTheFilterValue, $modal);
                 }
             }
@@ -130,16 +130,22 @@ class Main
 
     /**
      * builds a table with the provided keys and data.
-     * maybe should move this to a template class.
+     * maybe move this to a template class.
      *
      * @param $keys
      * @param $dataGroup
      * @return string
      */
     private function toTable($keys, $dataGroup){
-        //checks if the $keys, is a string
+        //checks if the $keys, is a string if so explode it to an array, so that it can be used in the function below.
         if(is_string($keys)){
-            $keys = explode(" ", $keys);
+            //use a weird delimiter to prevent accidental splitting
+            $keys = explode("=", $keys);
+        }
+        //checks if the $keys, is a string if so explode it to an array, so that it can be used in the function below.
+        if(is_string($dataGroup)){
+            //use a weird delimiter to prevent accidental splitting
+            $dataGroup = explode("=", $dataGroup);
         }
 
         //the start of the table

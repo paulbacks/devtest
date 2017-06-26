@@ -39,14 +39,14 @@ echo '</div>';
  * return all car models containing a 3
  */
 echo '<div style="width:25%; float: left;"><h1>All modals with a 3</h1>';
-echo $application->allCarModalsWithFilter('3');
+echo $application->allCarModalsWithFilter(3);
 echo '</div>';
 
 /**
  * return all numbers greater than or equal to 1000
  */
 echo '<div style="width:25%; float: left;"><h1>All numbers greater than 999';
-echo $application->numberGreaterThan('999');
+echo $application->numberGreaterThan(999);
 echo '</div>';
 
 /**

@@ -114,7 +114,7 @@ class Main
         $filterLength = strlen($filterValue);
 
         foreach ($this->data['phone-numbers'] as $phoneNumber){
-            if(substr($phoneNumber, -1, $filterLength) == $filterValue){
+            if(substr($phoneNumber, -$filterLength) == $filterValue){
                 array_push($filteredPhoneNumbers, $phoneNumber);
             }
         }

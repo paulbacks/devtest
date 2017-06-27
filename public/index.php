@@ -53,7 +53,7 @@ echo '</div>';
  * return all phone numbers ending with 01
  */
 echo '<div style="width:25%; float: left;"><h1>All phone numbers ending with 01</h1>';
-echo $application->allPhoneNumbersEndingOn(01);
+echo $application->allPhoneNumbersEndingOn('01');
 echo '</div>';
 
 echo '</div>';
